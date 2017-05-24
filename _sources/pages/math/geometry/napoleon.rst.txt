@@ -1,0 +1,5 @@
+Napoleon's Theorem
+==================
+
+.. raw:: html
+    :file: figures/napoleon.html

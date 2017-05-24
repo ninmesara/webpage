@@ -1,0 +1,18 @@
+Math
+====
+
+Geometry Animations
+~~~~~~~~~~~~~~~~~~~
+
+These geometry animations use the excellent `JSXGraph <http://jsxgraph.uni-bayreuth.de/wp/index.html>`_ library.
+They were inspired by the ones at `Cut the Knot <http://www.cut-the-knot.org/>`_.
+These animations use only Javascript (no Java), which makes them more compatible
+with modern web browsers and often faster.
+
+.. toctree::
+
+   math/geometry/fermat
+   math/geometry/kosnita
+   math/geometry/morley
+   math/geometry/napoleon
+   math/geometry/orthocenter

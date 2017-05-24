@@ -1,0 +1,191 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="A blog by medicine and other stuff">
+        <meta name="viewport" content="width=device-width">
+        <title>Napoleon’s Theorem &mdash; Nin-Me-Sa-Ra</title>
+            <link rel="stylesheet" href="../../../_static/normalize.css" type="text/css">
+            <link rel="stylesheet" href="../../../_static/sphinx.css" type="text/css">
+            <link rel="stylesheet" href="../../../_static/main.css" type="text/css">
+            <link rel="stylesheet" href="../../../_static/flat.css" type="text/css">
+            <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+            <link rel="stylesheet" href="../../../_static/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" type="text/css" /><link rel="shortcut icon" href="../../../_static/tinkerer.ico" /><!-- Load modernizr and JQuery -->
+        <script src="../../../_static/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../../_static/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="../../../_static/plugins.js"></script>
+        <script src="../../../_static/main.js"></script>
+        <link rel="search" title="Search" href="../../../search.html" /><link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.html" /><script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.5.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        SOURCELINK_SUFFIX: '.txt',
+        HAS_SOURCE:  true
+      };
+    </script><script type="text/javascript" src="../../../_static/underscore.js"></script><script type="text/javascript" src="../../../_static/doctools.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js"></script><script type="text/javascript" src="../../../_static/disqus.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Scroll to content if on small screen
+            if (screen.width < 480)
+            {
+                $(document).scrollTop(document.getElementsByTagName("article")[0].offsetTop - 44);
+            }
+        });
+    </script>
+
+    <script src="../../../_static/jsxgraphcore.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        renderMathInElement(document.body,
+            {
+                delimiters: [
+                    {left: "\\\\begin{equation*}", right: "\\\\end{equation*}", display: true},
+                    {left: "\\\[", right: "\\\]", display: true},
+                    {left: "\\\(", right: "\\\)", display: false}
+                ]
+            }
+        );
+    });
+    </script></head>
+    <body role="document">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+      <div id="container"><header role="banner">
+            <hgroup>
+              <h1><a href="../../../index.html">Nin-Me-Sa-Ra</a></h1><h2>Stuff about everything</h2></hgroup>
+          </header>
+      <nav role="navigation">
+            <ul><li class="main-nav">
+                  <a href="../../../index.html">Blog</a>
+                </li>
+              <li class="main-nav">
+                  <a href="../../about.html">About</a>
+                </li>
+              <li class="main-nav">
+                  <a href="../../faq.html">FAQ</a>
+                </li>
+              <li class="main-nav">
+                  <a href="../../recommendations.html">Recommendations</a>
+                </li>
+              <li class="main-nav">
+                  <a href="../../math.html">Math</a>
+                </li>
+              </ul>
+          </nav><div class="main-container" role="main"><div class="main wrapper body clearfix"><article>
+    <div class="section" id="napoleon-s-theorem">
+<h1>Napoleon&#8217;s Theorem</h1>
+<!-- Drawing area -->
+<div id="box" class="jxgbox" style="width:600px; height:600px; overflow:hidden; /*position:absolute; top:0px; left:0px;*/"></div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+JXG.Options.renderer = 'canvas';
+
+var brd = JXG.JSXGraph.initBoard('box', {originX: 300, originY: 300, grid:false, unitX: 15, unitY: 15, axis:false});
+var A = brd.create('point', [-7,4], {name: 'A', visible: true});
+var B = brd.create('point', [6,3], {name: 'B', visible: true});
+var C = brd.create('point', [-4,-7], {name: 'C', visible: true});
+
+var AB = brd.create('segment', [A,B]);
+var BC = brd.create('segment', [B,C]);
+var CA = brd.create('segment', [C,A]);
+
+function fermatVertex(X,Y,Z, attrs) {
+    
+    return brd.create('point', [P.usrCoords[1], P.usrCoords[2]], attrs)
+}
+
+function napoleonVertex(X,Y,Z, attrs) {
+    var P_X = X.board.create('point', [0,0], attrs)
+    var angle_P_X = X.board.create('angle', [Y,Z,P_X], {visible: false});
+    angle_P_X.addParents([X])
+    // Dynamically change the angle as the points are moved
+    angle_P_X.setAngle(function() {
+        var sameSide = JXG.Math.Geometry.angle(Y,Z,X) < 0;
+        if (sameSide) {
+            return Math.PI/3
+        } else {
+            return -Math.PI/3
+        }
+    });
+    X.board.update()
+    return P_X
+}
+
+var P_A = napoleonVertex(A,B,C, {name: 'P_A'});
+var P_B = napoleonVertex(B,C,A, {name: 'P_B'});
+var P_C = napoleonVertex(C,A,B, {name: 'P_C'});
+
+var BP_A = brd.create('segment', [B,P_A]);
+var CP_A = brd.create('segment', [C,P_A]);
+brd.create('hatch', [CP_A, 1]);
+brd.create('hatch', [BP_A, 1]);
+
+var AP_B = brd.create('segment', [A,P_B]);
+var CP_B = brd.create('segment', [C,P_B]);
+brd.create('hatch', [AP_B, 2]);
+brd.create('hatch', [CP_B, 2]);
+
+var AP_C = brd.create('segment', [A,P_C]);
+var BP_C = brd.create('segment', [B,P_C]);
+brd.create('hatch', [AP_C, 3]);
+brd.create('hatch', [BP_C, 3]);
+
+var O_C = brd.create('circumcenter', [A,B,P_C], {name: 'O_C'});
+var O_A = brd.create('circumcenter', [B,C,P_A], {name: 'O_A'});
+var O_B = brd.create('circumcenter', [C,A,P_B], {name: 'O_B'});
+
+var O_AO_B = brd.create('segment', [O_A, O_B]);
+var O_BO_C = brd.create('segment', [O_B, O_C]);
+var O_CO_A = brd.create('segment', [O_C, O_A]);
+//brd.create('hatch', [O_AO_B, 4]);
+//brd.create('hatch', [O_BO_C, 4]);
+//brd.create('hatch', [O_CO_A, 4]);
+
+/* ]]> */
+</script></div>
+
+    <div class="postmeta">
+        
+        
+        
+        </div></article><aside class="sidebar"><section><div class="widget">
+    <h1>Recent Posts</h1>
+    <ul><li>
+            <a href="../../../2017/05/24/medicine-and-physiology.html">Medicine and Physiology for the Non Doctor</a>
+        </li></ul>
+</div>
+</section><section><div class="widget" id="searchbox" role="search">
+    <h1><a href="#searchbox">Search</a></h1>
+    <form action="../../../search.html" method="get">
+        <input type="text" name="q" />
+        <button type="submit"><span class="fa fa-search"></span></button>
+    </form>
+</div></section></aside></div> <!-- #main --></div> <!-- #main-container -->
+
+        <div class="footer-container" role="contentinfo"><footer class="wrapper">&copy; Copyright 2017, Ninmesara. Powered by <a href="http://www.tinkerer.me/">Tinkerer</a> and <a href="http://sphinx.pocoo.org/">Sphinx</a>.</footer></div> <!-- footer-container -->
+
+      </div> <!--! end of #container --><script type="text/javascript">    var disqus_shortname = "ninmesara";    disqus_count();</script><!--[if lt IE 7 ]>
+          <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+          <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+        <![endif]-->
+    </body>
+</html>

@@ -6,7 +6,10 @@ Medicine and Physiology for the Non Doctor
 .. tags:: medicine
 .. comments::
 
-I plan on covering a number of topics.
+I’m a young doctor and I love to talk about medicine in unconventional ways.
+I plan on covering a number of topics related to physiology
+(the science of how living beings work) and medicine 
+(the study of disease and the art and science of dealing with disease)
 I might split or join some of those topics if I feel it makes more sense that way.
 In that case I'll update this index.
 
