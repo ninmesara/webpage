@@ -16,3 +16,5 @@ with modern web browsers and often faster.
    math/geometry/morley
    math/geometry/napoleon
    math/geometry/orthocenter
+
+.. comments::

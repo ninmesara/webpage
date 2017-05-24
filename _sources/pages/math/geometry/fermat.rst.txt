@@ -3,3 +3,5 @@ Fermat's Point
 
 .. raw:: html
     :file: figures/fermat.html
+
+.. comments::
